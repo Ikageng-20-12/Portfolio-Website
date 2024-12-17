@@ -32,8 +32,17 @@ const Education: React.FC = () => {
             <p className="text-sm text-gray-400">Various Technical Certifications</p>
             <ul className="text-xs text-gray-500 mt-1 list-disc list-inside">
               <li>Data Engineering Fundamentals</li>
-              <li>Full Stack Web Development</li>
-              <li>Python Programming</li>
+              <li>SQL Essensial Training</li>
+              <li>Relational Databases</li>
+              <li>Docker Foundations Professional Certificate</li>
+              <li>Learning SFTP</li>
+              <li>React Essential Training</li>
+              <li>Node.js Essential Training</li>
+              <li>Learning Data Governance</li>
+              <li>Database Design</li>
+              <li>Introduction to CyberSecurity</li>
+              <li>Next.js</li>
+              <li>Information Technology Foundations</li>
             </ul>
           </div>
         </div>

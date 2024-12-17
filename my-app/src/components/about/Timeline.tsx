@@ -25,14 +25,15 @@ const timelineEvents = [
   },
   {
     year: '2024',
-    title: 'Completed my learning journey at WeThinkCode',
-    description: 'Explored full stack development and data engineering'
+    title: 'Portfolio Development',
+    description: 'Created personal portfolio website'
   },
   {
     year: '2024',
-    title: 'Portfolio Development',
-    description: 'Created personal portfolio website'
+    title: 'Completed my learning journey at WeThinkCode',
+    description: 'Explored full stack development and data engineering'
   }
+  
 ];
 
 const Timeline: React.FC = () => {
