@@ -1,73 +1,83 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Picture from "../pictures/Portfolio3.jpg";
-import Button from "@mui/material/Button"; 
+import { ChevronDown } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
   const handleScrollToHome = () => {
     const homeSection = document.getElementById("home");
     if (homeSection) {
-      const yOffset = -70; 
-      const yPosition = homeSection.getBoundingClientRect().top + window.scrollY + yOffset;
-      window.scrollTo({ top: yPosition, behavior: "smooth" });
+      window.scrollTo({ top: homeSection.offsetTop, behavior: "smooth" });
     }
   };
 
   return (
-    <main className="min-h-screen bg-black text-white relative overflow-hidden flex flex-col md:flex-row">
-      {/* Left side - Image */}
-      <div className="w-full md:w-2/5 h-[300px] md:h-auto relative">
-        <img
-          src={Picture}
-          alt="Moody corridor with light"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute top-1/4 inset-x-0 flex items-center justify-center max-w-xs mx-auto">
-          <p className="text-xs md:text-sm italic text-gray-300 text-center">
-            "Technology has the power to ignite a brighter future, connecting ideas and inspiring progress across the world."
-          </p>
-        </div>
+    <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.1)_0,rgba(0,0,0,0)_100%)]"></div>
       </div>
 
-      {/* Right side - Content */}
-      <div className="w-full md:w-3/5 flex flex-col justify-center px-6 py-4 md:px-12 md:py-8">
-        <motion.h1
+      <div className="relative h-screen flex flex-col items-center justify-center px-6">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4"
+          className="text-center max-w-3xl mx-auto space-y-8"
         >
-          Welcome to my <span className="text-gray-400">Portfolio Website</span>
-        </motion.h1>
+          <h1 className="text-5xl md:text-6xl font-bold">
+            Welcome to my{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400">
+              Digital Space
+            </span>
+          </h1>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="space-y-2 md:space-y-4 mb-4 md:mb-6"
-        >
-          <p className="text-sm md:text-base">
-            My name is{" "}
-            <a href="#" className="text-blue-500 hover:text-blue-400 transition-colors">
-              Ikageng Thitane
-            </a>
-            , and I invite you
-          </p>
-          <p className="text-sm md:text-base">To explore my world as a developer.</p>
-          <p className="text-sm md:text-base">Don't hesitate to press the button below to</p>
-          <p className="text-sm md:text-base">Dive into my work, skills, and projects.</p>
-          <p className="text-sm md:text-base">Let's build something amazing together!</p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="space-y-4"
+          >
+            <p className="text-xl text-gray-300 leading-relaxed">
+              Hi, I'm{" "}
+              <span className="text-blue-400 font-semibold">Ikageng Thitane</span>
+            </p>
+            <p className="text-lg text-gray-400">
+              Transforming ideas into elegant solutions through code.
+              <br />
+              Let's build something extraordinary together.
+            </p>
+          </motion.div>
+
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            onClick={handleScrollToHome}
+            className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium transition duration-300 ease-out border-2 border-blue-500 rounded-full hover:border-blue-400"
+          >
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
+              <ChevronDown className="w-6 h-6" />
+            </span>
+            <span className="absolute flex items-center justify-center w-full h-full text-blue-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+              Explore My Work
+            </span>
+            <span className="relative invisible">Explore My Work</span>
+          </motion.button>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-        >
-          <Button variant="outlined" onClick={handleScrollToHome}>
-            Click Me
-          </Button>
-        </motion.div>
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <motion.div
+            animate={{
+              y: [0, 10, 0],
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          >
+            <ChevronDown className="w-8 h-8 text-blue-400" />
+          </motion.div>
+        </div>
       </div>
     </main>
   );
