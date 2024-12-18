@@ -43,6 +43,7 @@ const Education: React.FC = () => {
               <li>Introduction to CyberSecurity</li>
               <li>Next.js</li>
               <li>Information Technology Foundations</li>
+
             </ul>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Projects from "./components/projects/project";
 import Skills from "./components/skills/Skills"
 import About from "./components/about/about";
+import Contact from "./components/contact/Contact";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Projects />
       <Skills />
       <About />
+      <Contact />
     </div>
   );
 };

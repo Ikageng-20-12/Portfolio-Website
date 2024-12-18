@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Brain, Coffee, Gamepad2, Music } from 'lucide-react';
+import { Code, Database, BarChart, Coffee, Gamepad2, Music, Users, Dumbbell, BookOpen, Footprints } from 'lucide-react';
 
 const interests = [
   {
@@ -14,8 +14,8 @@ const interests = [
     description: 'Working with data pipelines and analytics'
   },
   {
-    icon: <Brain className="w-6 h-6" />,
-    title: 'AI & ML',
+    icon: <BarChart className="w-6 h-6" />,
+    title: 'Data Analytics',
     description: 'Exploring artificial intelligence applications'
   },
   {
@@ -26,12 +26,32 @@ const interests = [
   {
     icon: <Gamepad2 className="w-6 h-6" />,
     title: 'Gaming',
-    description: 'Strategic gaming and game development'
+    description: 'I am a gamer, I like playing video games'
   },
   {
     icon: <Music className="w-6 h-6" />,
     title: 'Music',
-    description: 'Listening while coding and creating'
+    description: 'I like to listen to music most of the time just to keep me relaxed'
+  },
+  {
+    icon: <Users className="w-6 h-6" />,
+    title: 'Networking',
+    description: 'Attending events and connecting with people to balance social life'
+  },
+  {
+    icon: <Dumbbell className="w-6 h-6" />,
+    title: 'Working Out',
+    description: 'Occasionally working out to maintain health balance'
+  },
+  {
+    icon: <Footprints className="w-6 h-6" />,
+    title: 'Walking',
+    description: 'Taking peaceful walks to refresh the mind'
+  },
+  {
+    icon: <BookOpen className="w-6 h-6" />,
+    title: 'Reading',
+    description: 'Reading books to keep my brain active even during breaks'
   }
 ];
 
