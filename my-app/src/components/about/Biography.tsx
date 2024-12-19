@@ -42,7 +42,7 @@ const Biography: React.FC = () => {
           </div>
         </div>
         <p className="text-gray-300 leading-relaxed">👩‍💻 Full-Stack Developer | Data Engineering Specialist</p>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-xs text-gray-300 leading-relaxed">
         Hi there! I'm a full-stack developer with a growing specialization in data engineering, and I’m someone who lives and breathes coding. My passion for programming isn’t just about solving problems—it's about how coding aligns with who I am as a person.
 
         I believe in the power of continuous learning. For me, coding is more than a career—it’s a never-ending journey of discovery and growth. Technology is always evolving, and that excites me because it means there’s always something new to learn! 🌱

@@ -9,12 +9,11 @@ interface ProjectCategoryProps {
 }
 
 const ProjectCategory: React.FC<ProjectCategoryProps> = ({ title, color, isSelected, onClick }) => {
-  // Map colors to Tailwind classes
   const colorClass = {
     green: 'border-green-500 bg-green-500',
     blue: 'border-blue-500 bg-blue-500',
     amber: 'border-amber-400 bg-amber-400',
-  }[color] || 'border-gray-500 bg-gray-500'; // Fallback color
+  }[color] || 'border-gray-500 bg-gray-500'; 
 
   return (
     <motion.div

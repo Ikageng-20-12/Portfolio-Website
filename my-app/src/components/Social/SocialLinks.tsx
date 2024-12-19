@@ -16,19 +16,21 @@ const socialLinks: SocialLink[] = [
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="flex space-x-6 justify-center lg:justify-start pt-6">
-      {socialLinks.map(({ Icon, href, label }) => (
-        <a
-          key={label}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transform hover:scale-110 transition-transform duration-300"
-          aria-label={label}
-        >
-          <Icon className="w-6 h-6 text-blue-400 hover:text-blue-300" />
-        </a>
-      ))}
+    <div className="flex items-center justify-center">
+      <div className="flex space-x-6">
+        {socialLinks.map(({ Icon, href, label }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform hover:scale-110 transition-transform duration-300"
+            aria-label={label}
+          >
+            <Icon className="w-6 h-6 text-blue-400 hover:text-blue-300" />
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

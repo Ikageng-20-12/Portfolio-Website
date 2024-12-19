@@ -30,7 +30,7 @@ const Education: React.FC = () => {
           <div>
             <h3 className="font-medium">Certifications</h3>
             <p className="text-sm text-gray-400">Various Technical Certifications</p>
-            <ul className="text-xs text-gray-500 mt-1 list-disc list-inside">
+            <ul className="text-s text-gray-500 mt-1 list-disc list-inside">
               <li>Data Engineering Fundamentals</li>
               <li>SQL Essensial Training</li>
               <li>Relational Databases</li>

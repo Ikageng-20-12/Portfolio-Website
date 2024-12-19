@@ -13,7 +13,7 @@ const projectsData = {
       githubLink: "https://github.com/yourusername/banking-app",
       zipLink: "/downloads/banking-app.zip"
     },
-    // Add more ongoing projects...
+    
   ],
   completed: [
     {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Terminal, Globe, Server, Shield } from 'lucide-react';
+import { Code2, Database, Terminal, Globe, Server, FileCode, GitBranch } from 'lucide-react';
 import FloatingIcons from './icons';
 
 interface Skill {
@@ -11,12 +11,16 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'JavaScript/TypeScript', icon: <Code2 className="w-6 h-6" />, level: 90, category: 'Frontend' },
+  { name: 'JavaScript/TypeScript', icon: <Code2 className="w-6 h-6" />, level: 70, category: 'Frontend' },
   { name: 'React/Next.js', icon: <Globe className="w-6 h-6" />, level: 85, category: 'Frontend' },
-  { name: 'Python', icon: <Terminal className="w-6 h-6" />, level: 80, category: 'Backend' },
-  { name: 'SQL/PostgreSQL', icon: <Database className="w-6 h-6" />, level: 75, category: 'Backend' },
-  { name: 'Node.js', icon: <Server className="w-6 h-6" />, level: 85, category: 'Backend' },
-  { name: 'Security', icon: <Shield className="w-6 h-6" />, level: 70, category: 'Other' },
+  { name: 'Python', icon: <Terminal className="w-6 h-6" />, level: 90, category: 'Backend' },
+  { name: 'SQL/PostgreSQL', icon: <Database className="w-6 h-6" />, level: 95, category: 'Backend' },
+  { name: 'Node.js', icon: <Server className="w-6 h-6" />, level: 77, category: 'Backend' },
+  { name: 'Docker', icon: <Server className="w-6 h-6" />, level: 90, category: 'Other' },
+  { name: 'Java', icon: <FileCode className="w-6 h-6" />, level: 80, category: 'Backend' },
+  { name: 'HTML & CSS', icon: <FileCode className="w-6 h-6" />, level: 90, category: 'Frontend' },
+  { name: 'C++', icon: <Code2 className="w-6 h-6" />, level: 60, category: 'Backend' },
+  { name: 'Version Control (Git)', icon: <GitBranch className="w-6 h-6" />, level: 90, category: 'Other' },
 ];
 
 const TechnicalSkills: React.FC = () => {
