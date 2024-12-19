@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 interface ProjectCategoryProps {
   title: string;
-  color: string; // expects color names like 'green', 'blue', 'orange'
+  color: string; 
   isSelected: boolean;
   onClick: () => void;
 }

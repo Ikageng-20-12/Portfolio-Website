@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send } from 'lucide-react';
+import axios from 'axios';
 import FormInput from './FormInput';
 import FormTextArea from './FormTextArea';
 import SubmitButton from './SubmissionButton';
@@ -15,9 +15,12 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle the form submission
-    // For now, we'll just log the data
-    console.log('Form submitted:', formData);
+    try {
+      const response = await axios.post('http://localhost:5000/submit', formData);
+      console.log('Form submitted:', response.data);
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
