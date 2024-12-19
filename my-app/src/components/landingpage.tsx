@@ -38,10 +38,10 @@ const LandingPage: React.FC = () => {
           >
             <p className="text-xl text-gray-300 leading-relaxed">
               Hi, I'm{" "}
-              <span className="text-blue-400 font-semibold">Ikageng Thitane</span>
+              <span className="text-blue-400 font-semibold">Ikageng Thitane.</span>
             </p>
             <p className="text-lg text-gray-400">
-              Transforming ideas into elegant solutions through code.
+              I transforming ideas into elegant solutions through code.
               <br />
               Let's build something extraordinary together.
             </p>

@@ -21,7 +21,7 @@ connection.once('open', () => {
 // Define a schema and model for form submissions
 const submissionSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  email: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
   subject: { type: String, required: true },
   message: { type: String, required: true },
 });
@@ -32,9 +32,14 @@ const Submission = mongoose.model('Submission', submissionSchema);
 app.post('/submit', async (req, res) => {
   const { name, email, subject, message } = req.body;
 
-  const newSubmission = new Submission({ name, email, subject, message });
-
   try {
+    // Check if a submission with the same email already exists
+    const existingSubmission = await Submission.findOne({ email });
+    if (existingSubmission) {
+      return res.status(400).json({ error: 'A submission with this email already exists' });
+    }
+
+    const newSubmission = new Submission({ name, email, subject, message });
     await newSubmission.save();
     res.status(201).json({ message: 'Form submitted successfully' });
   } catch (error) {
