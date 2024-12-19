@@ -8,32 +8,83 @@ const projectsData = {
   ongoing: [
     {
       id: 1,
-      title: "Banking App",
-      description: "A modern banking application with real-time transactions and secure authentication.",
-      githubLink: "https://github.com/yourusername/banking-app",
+      title: "Farm-Wise",
+      description: "Built with: Python, Flask, Docker, HTML, CSS,FarmWise is an educational platform for new farmers, providing valuable information  on various farming techniques, types of farms, and essential resources to promote sustainable agriculture.",
+      githubLink: "https://github.com/Ikageng-20-12/FarmWise",
       zipLink: "/downloads/banking-app.zip"
     },
-    
+
   ],
   completed: [
     {
       id: 2,
       title: "The Odin Recipe",
-      description: "A recipe sharing platform built with React and Node.js.",
-      githubLink: "https://github.com/yourusername/odin-recipe",
+      description: "A recipe sharing platform built with html and css",
+      githubLink: "https://github.com/Ikageng-20-12/odin-recipes",
       zipLink: "/downloads/odin-recipe.zip"
     },
-    // Add more completed projects...
+    {
+      id: 4,
+      title: "Odin-landing-page",
+      description: "A landing page built with html and css",
+      githubLink: "https://github.com/Ikageng-20-12/Odin-landing-page",
+      zipLink: "/downloads/odin-recipe.zip"
+    },
+    {
+      id: 5,
+      title: "CamaroCupWeb",
+      description: "Built with: Next.js, TypeScript, Tailwind CSS,A Next.js web clone of an existing Camaro racing website, capturing theoriginal’s design and interactivity",
+      githubLink: "https://github.com/Ikageng-20-12/CamaroCupWeb",
+      zipLink: "/downloads/odin-recipe.zip"
+    },
+    {
+      id: 6,
+      title: "Odin-RPS",
+      description: "A Rock Paper Scissors game built with html,css and java script",
+      githubLink: "https://github.com/Ikageng-20-12/Odin-RPS",
+      zipLink: "/downloads/odin-recipe.zip"
+    },
+    {
+      id: 7,
+      title: "Portfolio-Website",
+      description: "A portfolio website built with React, Typescript and Tailwind CSS",
+      githubLink: "https://github.com/Ikageng-20-12/Portfolio-Website",
+      zipLink: ""
+    },
+    
+
   ],
   collab: [
     {
       id: 3,
-      title: "HangMan",
-      description: "A collaborative word-guessing game with multiplayer support.",
-      githubLink: "https://github.com/yourusername/hangman",
+      title: "Businessyakokasi",
+      description: "A collaborative project that was meant to help local business owners to advertise their businesses so they can reach more customers and be recognized",
+      githubLink: "https://github.com/innotech012/businessyakokasi",
+      zipLink: "",
+    },
+
+    {
+      id: 8,
+      title: "Data Engineering Linkedin Practical",
+      description: "A collaborative project to build a data engineering pipeline handling cvs files and pushing the summarised data to a cloud based db which is neonDB.",
+      githubLink: "https://github.com/Ikageng-20-12/Data-Engineering-Linkedin-Practical",
       zipLink: "/downloads/hangman.zip"
     },
-    // Add more collab projects...
+    {
+      id: 9,
+      title: "Docker Your First Project from a Linkedin Course",
+      description: "A collaborative project to dockerize a simple python project",
+      githubLink: "https://github.com/Ikageng-20-12/docker-your-first-project-4485003",
+      zipLink: "/downloads/hangman.zip"
+    },
+    {
+      id: 10,
+      title: "Python Fundamentals101",
+      description: "A collaborative project with basic pytohn script meant to be used as tutorial for beginners",
+      githubLink: "https://github.com/Ikageng-20-12/Python_Fundamentals101",
+      zipLink: "/downloads/hangman.zip"
+    },
+
   ]
 };
 
@@ -61,7 +112,7 @@ const Projects: React.FC = () => {
             onClick={() => setSelectedCategory(selectedCategory === 'completed' ? null : 'completed')}
           />
           <ProjectCategory
-            title="Collab"
+            title="Collab/Forked"
             color="blue"
             isSelected={selectedCategory === 'collab'}
             onClick={() => setSelectedCategory(selectedCategory === 'collab' ? null : 'collab')}
