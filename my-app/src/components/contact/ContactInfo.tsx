@@ -33,7 +33,7 @@ const ContactInfo: React.FC = () => {
           </div>
           <div>
             <h3 className="font-medium">Location</h3>
-            <p className="text-sm text-gray-400">South Africa</p>
+            <p className="text-sm text-gray-400">South Africa, Gauteng, Pretoria</p>
           </div>
         </div>
 
