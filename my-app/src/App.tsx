@@ -34,15 +34,13 @@ const App: React.FC = () => {
 
   return (
     <div>
-      {/* Landing Page */}
+   
       <section id="landing">
         <LandingPage onExploreClick={handleExploreClick} />
       </section>
 
-      {/* Conditionally Render Navbar */}
       {showNavbar && <Navbar />}
 
-      {/* Other Sections */}
       <section id="home">
         <Home />
       </section>

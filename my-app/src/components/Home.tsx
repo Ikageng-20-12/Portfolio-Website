@@ -8,7 +8,6 @@ const Home: React.FC = () => {
       id="home"
       className="min-h-screen pt-16 bg-gradient-to-br from-black via-gray-900 to-black text-white relative"
     >
-      {/* Content Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
         <div className="flex flex-col justify-center items-center px-8 lg:px-16 relative z-10">
           <div className="space-y-6 text-center lg:text-left w-full lg:max-w-xl">
