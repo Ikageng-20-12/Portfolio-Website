@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                   },
                   {
                     Icon: Download,
-                    href: "/path/to/your/cv.pdf", // Replace with the actual path to your CV file
+                    href: "/CV/Ikageng_Thitane_CV.pdf", 
                     label: "Download CV",
                   },
                 ].map(({ Icon, href, label }) => (
