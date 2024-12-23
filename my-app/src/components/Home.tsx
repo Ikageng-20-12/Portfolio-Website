@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                       <Icon className="w-6 h-6 text-blue-400 hover:text-blue-300" />
                     </a>
                     {label === "Download CV" && (
-                      <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-blue-1 00 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-blue-100 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         CV
                       </span>
                     )}
@@ -98,7 +98,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute top-20 bottom-20 left-1/2 transform -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-blue-500/50 to-transparent"></div>
+      <div className="absolute top-20 bottom-20 left-1/2 transform -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-blue-500/50 to-transparent hidden lg:block"></div>
     </div>
   );
 };
