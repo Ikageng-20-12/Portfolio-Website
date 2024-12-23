@@ -20,13 +20,13 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/submit', formData);
+      const response = await axios.post('/api/submit', formData); // Updated URL for production
       console.log('Form submitted:', response.data);
       setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setIsSubmitted(false), 3000); 
     } catch (error) {
-      console.error('Error submitting form', error);
+      console.error('Error submitting form:', error); // Log the error for debugging
       if (axios.isAxiosError(error) && error.response && error.response.data && error.response.data.error) {
         setError(error.response.data.error);
       } else {
