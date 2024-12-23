@@ -56,11 +56,11 @@ const Home: React.FC = () => {
                     href: "mailto:ikagengthitane@gmail.com",
                     label: "Email",
                   },
-                  {
-                    Icon: Download,
-                    href: "/CV/Ikageng_Thitane_CV.pdf", 
-                    label: "Download CV",
-                  },
+                  // {
+                  //   Icon: Download,
+                  //   href: "/CV/Ikageng_Thitane_CV.pdf", 
+                  //   label: "Download CV",
+                  // },
                 ].map(({ Icon, href, label }) => (
                   <div key={label} className="relative group">
                     <a

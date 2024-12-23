@@ -4,14 +4,14 @@ import { Circle } from 'lucide-react';
 
 const timelineEvents = [
   {
-    year: '2019',
-    title: 'Finished my High School',
-    description: 'Metriculated'
+    year: '2020',
+    title: 'Started my self-learning journey in programming',
+    description: 'JavaScript, Python, and Web Development'
   },
   {
-    year: '2020',
-    title: 'Started my Self learning journey in programming',
-    description: 'JavaScript, Python, and Web Development'
+    year: '2021',
+    title: 'Explored the world of startups',
+    description: 'Began researching and understanding startup ecosystems'
   },
   {
     year: '2023',
@@ -33,8 +33,8 @@ const timelineEvents = [
     title: 'Completed my learning journey at WeThinkCode',
     description: 'Explored full stack development and data engineering'
   }
-  
 ];
+
 
 const Timeline: React.FC = () => {
   return (
