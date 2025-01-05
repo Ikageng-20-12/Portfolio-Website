@@ -24,19 +24,23 @@ const Home: React.FC = () => {
             </p>
 
             <div className="flex flex-col space-y-4">
-              <div className="flex space-x-6 justify-center lg:justify-start">
-                {[
-                  { Icon: Code2, label: "Full Stack Development" },
-                  { Icon: Database, label: "Data Engineering" },
-                  { Icon: BarChart, label: "Data Analytics" },
-                ].map(({ Icon, label }) => (
-                  <div key={label} className="flex flex-col items-center space-y-2">
-                    <div className="p-3 bg-blue-500/10 rounded-lg">
-                      <Icon className="w-6 h-6 text-blue-400" />
-                    </div>
-                    <span className="text-xs text-gray-400">{label}</span>
-                  </div>
-                ))}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6">
+            {[
+              { Icon: Code2, label: "Full Stack Development" },
+              { Icon: Database, label: "Data Engineering" },
+              { Icon: BarChart, label: "Data Analytics" },
+            ].map(({ Icon, label }) => (
+              <div
+                  key={label}
+                  className="flex flex-col items-center space-y-2"
+                  style={{ minWidth: "110px" }} 
+                >
+                <div className="p-3 bg-blue-500/10 rounded-lg">
+                  <Icon className="w-6 h-6 text-blue-400" />
+                </div>
+                <span className="text-xs text-gray-400">{label}</span>
+              </div>
+            ))}
               </div>
 
               <div className="flex space-x-6 justify-center lg:justify-start pt-6">
